@@ -6,7 +6,7 @@ export const metadata = {
 export default function Resume(){
     return (
         <div className="min-h-screen flex flex-col items-center">
-          <div>
+
         </div>
       );
 }

@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+ /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+}  */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +24,49 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+@layer utilities {
+
+  .addPing{
+    @apply after:absolute after:content-['']  after:h-2 after:w-2 after:bg-red-700 after:dark:bg-darksecondary after:animate-ping-notification after:rounded-full;
+  }
+
+  .bg-dynamic{
+    @apply bg-lightbackground dark:bg-darkbackground;
+  }
+
+  .text-dynamic{
+    @apply text-lighttext  dark:text-darktext;
+  }
+
+  .primary-dynamic{
+    @apply bg-lightprimary dark:bg-darkprimary;
+  }
+
+  .about-picture-cards{
+    @apply w-1/3 rounded-md ;
+  }
+
+  .about-picture-description{
+    @apply text-center rounded-xl dark:backdrop-brightness-200 backdrop-brightness-90 px-10 py-5;
+  }
+
+  /* .secondary-dynamic{
+    @apply bg-lightsecondary dark:bg-darksecondary;
+  } */
+
+  .text-header-size{
+    @apply text-2xl;
+  }
+
+  /* .fadeInRight{
+    @apply opacity-0 transition-opacity duration-300 transform translate-x-full ease-in-out;
+  } */
 }

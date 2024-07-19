@@ -1,0 +1,2 @@
+This folder is not a path becaue there is an underscore in front of the name of the folder.
+Used to create files that don't have to be a path

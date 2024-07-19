@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -6,15 +7,38 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes:{
+        fadeInRight: {
+          '0%': {opacity: '0', transform: 'translateX(-40%)'},
+          '100%': {opacity: '1', transform: 'translateX(0%)'}
+        },
+        fadeInLeft: {
+          '0%': {opacity: '0', transform: 'translateX(40%)'},
+          '100%': {opacity: '1', transform: 'translateX(0%)'}
+        }
       },
+      animation: {
+        'ping-notification': 'ping 2s cubic-bezier(0, .1, 1, 1) infinite',
+        'fadeInRight': 'fadeInRight 1s',
+        'fadeInLeft': 'fadeInLeft 1s',
+
+      },
+      colors: {
+        'darktext': 'rgb(237, 241, 243)',
+        'darkbackground': 'rgb(15, 21, 22)',
+        'darkprimary': 'rgb(74, 76, 135)',
+        'darksecondary': 'rgb(140, 184, 222)',
+        'darkaccent': 'rgb(55 65 81)',
+        'lighttext': 'rgb(12, 7, 16)',
+        'lightbackground': 'rgb(253, 244, 221)',
+        'lightprimary': 'rgb(154, 177, 214)'
+      },
+      
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;

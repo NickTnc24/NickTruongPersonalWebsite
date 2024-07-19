@@ -1,0 +1,1 @@
+the [] in in the folder name makes it so that any value can be placed as the route name and the ... in the folder makes it so that all paths runs this page.

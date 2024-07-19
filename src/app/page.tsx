@@ -20,7 +20,7 @@ export default function Home() {
           height = {1}
           className="rounded-full animate-fadeInRight"
         />
-        <div>Hi I'm Nick Truong and I go to TAMU and this my website</div>
+        <div>Hi I&apos;m Nick Truong and I go to TAMU and this my website</div>
       </div>
     </div>
   );

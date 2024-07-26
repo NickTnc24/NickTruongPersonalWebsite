@@ -9,7 +9,7 @@ import React, { useState, useEffect } from 'react';
 
 function headerLinks(urlName: string, name: string){
     return(
-        <Link href = {urlName} className="text-header-size active:text-darksecondary">
+        <Link href = {urlName} className="text-header-size active:text-darktext dark:active:text-lighttext">
             {name}
         </Link>
     );
@@ -22,7 +22,7 @@ function removePing(pingName: string){
 export default function HeaderComponent(){
     return(
         <>
-            <div className="sticky flex flex-row items-center justify-between top-0 primary-dynamic z-10">
+            <div className="sticky flex flex-row items-center justify-between top-0 primary-dynamic z-10 rounded-md">
                 <div className="pl-7 pt-2">
                     <DarkModeComponent/>
                 </div>
@@ -43,9 +43,9 @@ export default function HeaderComponent(){
                         className=""
                     />
                 </Link> */}
-                {/* <Link href = "/" className="text-7xl py-5">
+                <Link href = "/" className="text-7xl py-5">
                     Nick Truong
-                </Link> */}
+                </Link>
             </div>
         </>
     );

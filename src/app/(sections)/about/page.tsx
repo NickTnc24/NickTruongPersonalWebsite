@@ -9,7 +9,7 @@ export default function About(){
     return (
         <div className="min-h-screen flex flex-col gap-10">
           <div className="flex flex-col text-header-size items-center">
-            <div>Yo I'm Nick and this is: </div>
+            <div>Yo I&apos;m Nick and this is: </div>
             <div>Stuff I like to do</div>
           </div>
           <div className="flex flex-row justify-evenly items-center">

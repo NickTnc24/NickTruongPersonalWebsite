@@ -18,7 +18,7 @@ export default function Home() {
           height = {1}
           className="rounded-full animate-fadeInRight"
         />
-        <div className=" about-picture-description w-1/2">
+        <div className="about-picture-description w-1/2">
           &emsp;&emsp;Welcome to my website! I&apos;m Nick Truong and I am majoring in Computer Science with a minor of Game Design and Cybersecurity at Texas A&M University. I work as a SOC Analyst for Texas A&M University as well as a Recreational Activities Director for SASE.
         </div>
       </div>

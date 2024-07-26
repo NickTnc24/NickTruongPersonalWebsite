@@ -1,15 +1,16 @@
 "use client";
 import Image from "next/image";
 import React, {useState, useEffect} from 'react';
-import ImageSlider from "./_components/imageSlider";
 import Link from "next/link";
 
 
 export default function Home() {
 
   return (
-    <div className="min-h-screen flex flex-col items-center">
-      {/* <ImageSlider></ImageSlider> */}
+    <div className="min-h-screen flex flex-col items-center gap-10">
+      <Link href = "/" className="text-7xl py-5">
+          Nick Truong
+      </Link>
       <div className="flex flex-wrap flex-row justify-center items-center gap-x-60 gap-y-32 w-4/5">
         <Image 
           src = "/_art/headshot.jpg"

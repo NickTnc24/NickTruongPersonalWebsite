@@ -6,7 +6,7 @@ import { UrlObject } from "url";
 export default function FooterComponent(){
     return(
         <>
-            <div className="relative flex flex-wrap justify-around w-full text-lg primary-dynamic py-6 mt-10 rounded-md">
+            <div className="relative flex flex-wrap flex-row justify-around text-lg primary-dynamic py-6 mt-10 rounded-md mx-7">
                 <Link href= 'https://github.com/nicktnc24' target="_blank" className="flex gap-3 items-center hover:scale-110 hover:transition hover:duration-300 active:duration-0 active:text-darktext dark:active:text-lighttext">
                     <Image
                         src = "/_art/github.jpg"
@@ -44,7 +44,7 @@ export default function FooterComponent(){
                         />
                     <div>nicktnc24@gmail.com</div>
                 </div>
-                <div className="absolute right-0 bottom-0 text-sm opacity-70">Built via Next.js, Tailwind</div>
+                <div className="absolute right-0 bottom-0 text-sm opacity-60">Built via Next.js, Tailwind</div>
             </div>
         </>
     );

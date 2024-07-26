@@ -63,7 +63,7 @@
   } */
 
   .text-header-size{
-    @apply text-2xl;
+    @apply text-3xl;
   }
 
   /* .fadeInRight{

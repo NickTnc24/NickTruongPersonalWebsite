@@ -28,7 +28,6 @@ export default function DarkModeComponent(){
     }
     
     useEffect(() => {
-        
         changeTheme();
     }, [darkMode]);
 

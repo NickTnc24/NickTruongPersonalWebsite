@@ -20,7 +20,7 @@ export default function About(){
                 height = {400}
                 className="about-picture-cards"
             />
-            <div className="h-1/2 w-1/3 about-picture-description">
+            <div className="h-fit w-1/3 about-picture-description">
                 I ran a marathon in 4 hours and 35 minutes in my sophomore year of college in the winter.
             </div>
           </div>

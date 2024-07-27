@@ -14,7 +14,7 @@ function projectLinks(title: string,urlName: string, imgPath: string, descriptio
                 <Image
                     src = {imgPath}
                     alt = "project"
-                    width = {250}
+                    width = {300}
                     height = {200}
                     className="rounded-md"
                 />
@@ -23,12 +23,12 @@ function projectLinks(title: string,urlName: string, imgPath: string, descriptio
                 <Link href={urlName} target="blank" className="text-2xl">
                     {title}
                 </Link>
-                <div className="flex flex-row gap-2 flex-wrap">
+                <div className="flex flex-row gap-2 flex-wrap max-sm:mx-10">
                     {techUsed.map((element, index) => (
                         <div key={index} className="border-4 dark:border-darkprimary border-lightprimary rounded-2xl text-center p-1">{element}</div>
                     ))}
                 </div>
-                <div className="opacity-60">&emsp;&emsp;{description}</div>
+                <div className="opacity-60 max-sm:mx-10 max-sm:mb-5">&emsp;&emsp;{description}</div>
             </div>
         </div>
     );

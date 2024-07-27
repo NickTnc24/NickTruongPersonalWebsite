@@ -29,11 +29,13 @@ const config: Config = {
       colors: {
         'darktext': 'rgb(237, 241, 243)',
         'darkbackground': 'rgb(15, 21, 22)',
+        'darkbackgroundshade': "rgb(30,42,44)",
         'darkprimary': 'rgb(74, 76, 135)',
         'darksecondary': 'rgb(140, 184, 222)',
         'darkaccent': 'rgb(55 65 81)',
         'lighttext': 'rgb(12, 7, 16)',
         'lightbackground': 'rgb(253, 244, 221)',
+        'lightbackgroundshade': "rgb(228,220,199)",
         'lightprimary': 'rgb(154, 177, 214)'
       },
       

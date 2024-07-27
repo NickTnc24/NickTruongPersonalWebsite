@@ -55,7 +55,7 @@
   }
 
   .about-picture-description{
-    @apply text-center rounded-xl dark:backdrop-brightness-200 backdrop-brightness-90 px-10 py-5;
+    @apply text-center rounded-xl dark:bg-darkbackgroundshade bg-lightbackgroundshade px-10 py-5;
   }
 
   /* .secondary-dynamic{

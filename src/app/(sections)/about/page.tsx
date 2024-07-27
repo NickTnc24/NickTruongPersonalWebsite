@@ -5,6 +5,40 @@ export const metadata = {
     description: "This is about ME",
 };
 
+function aboutMe(title: string, imgUrl: string, description: string){
+  return(
+    <div className="flex flex-row max-sm:flex-col gap-y-5 justify-evenly items-center">
+      <Image
+          src = {imgUrl}
+          alt = {title}
+          width = {450}
+          height = {400}
+          className="about-picture-cards"
+      />
+      <div className="sm:w-1/3 max-sm:w-10/12 about-picture-description">
+        &emsp;&emsp;{description}
+      </div>
+    </div>
+  )
+}
+
+function aboutMeReverse(title: string, imgUrl: string, description: string){
+  return(
+    <div className="flex flex-row-reverse max-sm:flex-col gap-y-5 justify-evenly items-center">
+      <Image
+              src = {imgUrl}
+              alt = {title}
+              width = {450}
+              height = {400}
+              className="about-picture-cards"
+          />
+      <div className="sm:w-1/3 max-sm:w-10/12 about-picture-description">
+        &emsp;&emsp;{description}
+      </div>
+    </div>
+  )
+}
+
 export default function About(){
     return (
         <div className="min-h-screen flex flex-col gap-10">
@@ -12,43 +46,10 @@ export default function About(){
             <div>Yo I&apos;m Nick and this is: </div>
             <div>Stuff I like to do</div>
           </div>
-          <div className="flex flex-row max-sm:flex-col gap-y-5 justify-evenly items-center">
-            <Image
-                src = "/_art/marathon.jpg"
-                alt = "marathon"
-                width = {450}
-                height = {400}
-                className="about-picture-cards"
-            />
-            <div className="sm:w-1/3 max-sm:w-10/12 about-picture-description">
-              &emsp;&emsp;I ran a marathon in 4 hours and 35 minutes in my sophomore year of college in the winter.
-            </div>
-          </div>
-          <div className="flex flex-row-reverse max-sm:flex-col gap-y-5 justify-evenly items-center">
-            <Image
-                    src = "/_art/vb.JPEG"
-                    alt = "vb"
-                    width = {450}
-                    height = {400}
-                    className="about-picture-cards"
-                />
-            <div className="sm:w-1/3 max-sm:w-10/12 about-picture-description">
-              &emsp;&emsp;I play lots of volleyball at Texas A&M University and this is the team that I played with.
-            </div>
-          </div>
-          <div className="flex flex-row max-sm:flex-col gap-y-5 justify-evenly items-center">
-            <Image
-                src = "/_art/basketball.jpeg"
-                alt = "basketball"
-                width = {450}
-                height = {400}
-                className="about-picture-cards"
-            />
-            <div className="sm:w-1/3 max-sm:w-10/12 text-center about-picture-description">
-              &emsp;&emsp;I love basketball and this is my intramural basketball team.
-            </div>
-          </div>
-          <div className="flex flex-row-reverse max-sm:flex-col gap-y-5 justify-evenly items-center">
+          <div>{aboutMe("marathon", "/_art/marathon.jpg", "I ran a marathon in 4 hours and 35 minutes in my sophomore year of college in the winter. I was inspired by David Goggins to start this. This run was the day before all of my final exams which was super unlucky timing.")}</div>
+          <div>{aboutMeReverse("volleyball", "/_art/vb.JPEG", "I play lots of volleyball at Texas A&M University and this is my intramural team. I got invested into volleyball because of a volleyball anime called Haikyuu!")}</div>
+          <div>{aboutMe("basketball", "/_art/basketball.jpeg", "This is my intramural basketball team. I have played basketball since 7th grade and my favorite NBA player is Stephen Curry.")}</div>
+          {/* <div className="flex flex-row-reverse max-sm:flex-col gap-y-5 justify-evenly items-center">
             <Image
                     src = "/_art/piano.JPG"
                     alt = "I'm playing piano!"
@@ -59,7 +60,10 @@ export default function About(){
             <div className="sm:w-1/3 max-sm:w-10/12 text-center about-picture-description">
               &emsp;&emsp;I love to play the piano. I started learning how to play piano over quarantine and I currently know how to play 7 pieces.
             </div>
-          </div>
+          </div> */}
+          <div>{aboutMeReverse("piano", "/_art/piano.JPG", "I started learning how to play piano over quarantine and I currently know how to play 7 pieces.")}</div>
+          <div>{aboutMe("rockclimbing", "/_art/rockclimbing.jpg", "I started rock climbing in quarantine year and in this picture, I'm at Stone Co at Texas A&M University!")}</div>
+          
         </div>
       );
 }

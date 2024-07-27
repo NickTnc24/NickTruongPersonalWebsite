@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center gap-10">
-      <Link href = "/" className="text-7xl py-5">
+      <Link href = "/" className="text-7xl py-5 justify-center">
           Nick Truong
       </Link>
       <div className="flex flex-wrap lg:flex-nowrap flex-row justify-center md:justify-around items-center gap-y-10 gap-10 mx-10">

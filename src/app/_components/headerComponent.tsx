@@ -22,7 +22,7 @@ function removePing(pingName: string){
 export default function HeaderComponent(){
     return(
         <>
-            <div className="sticky flex flex-row items-center justify-between top-0 primary-dynamic z-10 rounded-md mx-7">
+            <div className="sticky flex flex-row items-center justify-between top-0 primary-dynamic z-10 rounded-md sm:mx-7 ">
                 <div className="pl-7 pt-2">
                     <DarkModeComponent/>
                 </div>
@@ -30,7 +30,6 @@ export default function HeaderComponent(){
                     <div className="hover:scale-110 hover:duration-300">{headerLinks("/", "Home")}</div>
                     <div className="addPing hover:scale-110 hover:duration-300" id= 'aboutPing' onClick={() => removePing('aboutPing')}>{headerLinks("/about", "About")}</div>
                     <div className="addPing hover:scale-110 hover:duration-300" id= 'projectsPing' onClick={() => removePing('projectsPing')}>{headerLinks("/projects", "Projects")}</div>
-                    <div className="addPing hover:scale-110 hover:duration-300" id= 'resumePing' onClick={() => removePing('resumePing')}>{headerLinks("/resume", "Resume")}</div>
                 </div>
             </div> 
             <div className="relative flex flex-wrap items-center justify-center rounded-2xl left-1/2 w-3/4 gap-3 -translate-x-1/2 mb-10">

@@ -21,7 +21,7 @@ export default function About(){
                 className="about-picture-cards"
             />
             <div className="h-fit w-1/3 about-picture-description">
-                I ran a marathon in 4 hours and 35 minutes in my sophomore year of college in the winter.
+              &emsp;&emsp;I ran a marathon in 4 hours and 35 minutes in my sophomore year of college in the winter.
             </div>
           </div>
           <div className="flex flex-row-reverse justify-evenly items-center">
@@ -33,7 +33,7 @@ export default function About(){
                     className="about-picture-cards"
                 />
             <div className="h-fit w-1/3 text-center about-picture-description">
-                I play lots of volleyball at Texas A&M University and this is the team that I played with.
+              &emsp;&emsp;I play lots of volleyball at Texas A&M University and this is the team that I played with.
             </div>
           </div>
           <div className="flex flex-row justify-evenly items-center">
@@ -45,7 +45,7 @@ export default function About(){
                 className="about-picture-cards"
             />
             <div className="h-fit w-1/3 text-center about-picture-description">
-                I love basketball and this is my intramural basketball team.
+              &emsp;&emsp;I love basketball and this is my intramural basketball team.
             </div>
           </div>
           <div className="flex flex-row-reverse justify-evenly items-center">
@@ -57,7 +57,7 @@ export default function About(){
                     className="about-picture-cards"
                 />
             <div className="h-fit w-1/3 text-center about-picture-description">
-                I love to play the piano. I started learning how to play piano over quarantine and I currently know how to play 7 pieces.
+              &emsp;&emsp;I love to play the piano. I started learning how to play piano over quarantine and I currently know how to play 7 pieces.
             </div>
           </div>
         </div>

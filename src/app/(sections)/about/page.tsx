@@ -49,18 +49,6 @@ export default function About(){
           <div>{aboutMe("marathon", "/_art/marathon.jpg", "I ran a marathon in 4 hours and 35 minutes in my sophomore year of college in the winter. I was inspired by David Goggins to start this. This run was the day before all of my final exams which was super unlucky timing.")}</div>
           <div>{aboutMeReverse("volleyball", "/_art/vb.JPEG", "I play lots of volleyball at Texas A&M University and this is my intramural team. I got invested into volleyball because of a volleyball anime called Haikyuu!")}</div>
           <div>{aboutMe("basketball", "/_art/basketball.jpeg", "This is my intramural basketball team. I have played basketball since 7th grade and my favorite NBA player is Stephen Curry.")}</div>
-          {/* <div className="flex flex-row-reverse max-sm:flex-col gap-y-5 justify-evenly items-center">
-            <Image
-                    src = "/_art/piano.JPG"
-                    alt = "I'm playing piano!"
-                    width = {450}
-                    height = {400}
-                    className="about-picture-cards"
-                />
-            <div className="sm:w-1/3 max-sm:w-10/12 text-center about-picture-description">
-              &emsp;&emsp;I love to play the piano. I started learning how to play piano over quarantine and I currently know how to play 7 pieces.
-            </div>
-          </div> */}
           <div>{aboutMeReverse("piano", "/_art/piano.JPG", "I started learning how to play piano over quarantine and I currently know how to play 7 pieces.")}</div>
           <div>{aboutMe("rockclimbing", "/_art/rockclimbing.jpg", "I started rock climbing in quarantine year and in this picture, I'm at Stone Co at Texas A&M University!")}</div>
           

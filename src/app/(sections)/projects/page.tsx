@@ -9,7 +9,7 @@ export const metadata = {
 
 function projectLinks(title: string,urlName: string, imgPath: string, description: string, techUsed: Array<String>){
     return(
-        <div className="flex rounded-md dark:bg-darkbackgroundshade bg-lightbackgroundshade justify-center flex-wrap lg:flex-nowrap gap-2 min-w-[250px] max-w-[720px]">
+        <div className="flex rounded-md dark:bg-darkbackgroundshade bg-lightbackgroundshade justify-center flex-wrap lg:flex-nowrap gap-2 min-w-[300px] max-w-[720px]">
             <Link href={urlName} target="_blank" className="shrink-0">
                 <Image
                     src = {imgPath}

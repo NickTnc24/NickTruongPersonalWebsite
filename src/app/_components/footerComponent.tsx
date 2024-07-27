@@ -33,7 +33,7 @@ export default function FooterComponent(){
                             width = {40}
                             height = {40}
                         />
-                    <div>281-919-4495</div>
+                    <div>281-919-4995</div>
                 </div>
                 <div className="flex gap-3 items-center">
                     <Image

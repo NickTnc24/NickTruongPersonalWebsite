@@ -11,7 +11,7 @@ export default function Home() {
       <Link href = "/" className="text-7xl py-5">
           Nick Truong
       </Link>
-      <div className="flex flex-wrap flex-row justify-center items-center gap-x-60 gap-y-32 w-4/5">
+      <div className="flex flex-wrap lg:flex-nowrap flex-row justify-center md:justify-around items-center gap-y-10 gap-10 mx-10">
         <Image 
           src = "/_art/headshot.jpg"
           alt = "Logo"
@@ -19,7 +19,7 @@ export default function Home() {
           height = {1}
           className="rounded-full animate-fadeInRight"
         />
-        <div className="about-picture-description w-1/2">
+        <div className="about-picture-description lg:max-w-[50%]">
           &emsp;&emsp;Welcome to my website! I&apos;m Nick Truong and I am majoring in Computer Science with a minor of Game Design and Cybersecurity at Texas A&M University. I work as a SOC Analyst for Texas A&M University as well as a Recreational Activities Director for SASE.
         </div>
       </div>

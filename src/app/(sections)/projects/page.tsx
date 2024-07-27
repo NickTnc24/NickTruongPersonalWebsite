@@ -39,12 +39,10 @@ export default function Projects(){
         <div className="min-h-screen flex flex-col gap-10">
           <div className="text-header-size self-center">Projects</div>
           <div className="self-center opacity-60">Click on an project to learn more about it</div>
-          <div className="flex flex-row gap-y-10 mx-10 justify-around gap-x-10 flex-wrap">
+          <div className="flex flex-row gap-y-10 mx-10 justify-start gap-x-10 flex-wrap">
             <div>{projectLinks("SecuroChat", "https://github.com/aggie-coding-club/SecuroChat?tab=readme-ov-file", "/_art/securochat.jpg", "SecuroChat is an end-to-end Encrypted real-time chat application ensuring secure communication between users.", ["React Native", "Node.js", "AWS", "WebSocket", "React Navigation", "PostgreSQL", "Redux", "Firebase Cloud Messaging"])}</div>
             <div>{projectLinks("Personal Website", "https://github.com/NickTnc24/NickTnc24.github.io", "/_art/website.png", "I made a personal website that you can find all about me!", ["Next.js", "Tailwind", "Vercel"])}</div>
-            {/* <div>{projectLinks("Securochat", "https://github.com/aggie-coding-club/SecuroChat?tab=readme-ov-file", "/_art/securochat.jpg", "jaoidfjaosdjf", [])}</div>
-            <div>{projectLinks("SecuroChat", "https://github.com/aggie-coding-club/SecuroChat?tab=readme-ov-file", "/_art/securochat.jpg", "jaoidfjaosdjfasdfasdfafasdfsa", [])}</div> */}
-
+            <div>{projectLinks("Personal Website", "https://github.com/NickTnc24/NickTnc24.github.io", "/_art/website.png", "I made a personal website that you can find all about me!", ["Next.js", "Tailwind", "Vercel"])}</div>
           </div>
         </div>
       );

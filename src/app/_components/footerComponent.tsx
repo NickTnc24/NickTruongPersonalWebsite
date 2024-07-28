@@ -6,7 +6,7 @@ import { UrlObject } from "url";
 export default function FooterComponent(){
     return(
         <>
-            <div className="relative flex flex-wrap flex-row justify-around text-lg max-sm:text-sm primary-dynamic py-6 mt-10 rounded-md gap-y-5 gap-x-5 sm:mx-7 sm:duration-300">
+            <div className="relative flex flex-wrap flex-row justify-around text-lg max-sm:text-sm primary-dynamic py-6 mt-10 rounded-md gap-y-5 gap-x-5 sm:duration-300">
                 <Link href= 'https://github.com/nicktnc24' target="_blank" className="flex gap-3 items-center hover:scale-110 hover:transition hover:duration-300 active:duration-0 active:text-darktext dark:active:text-lighttext">
                     <Image
                         src = "/_art/github.jpg"
@@ -19,10 +19,10 @@ export default function FooterComponent(){
                 </Link>
                 <Link href= 'https://www.linkedin.com/in/nick-truong' target="_blank" className="flex gap-3 items-center hover:scale-110 hover:transition hover:duration-300 active:duration-0 active:text-darktext dark:active:text-lighttext">
                     <Image
-                            src = "/_art/linkedin.png"
-                            alt = "Linkedin"
-                            width = {40}
-                            height = {40}
+                        src = "/_art/linkedin.png"
+                        alt = "Linkedin"
+                        width = {40}
+                        height = {40}
                         />
                     LinkedIn
                 </Link>

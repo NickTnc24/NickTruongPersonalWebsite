@@ -20,7 +20,7 @@ export default function FooterComponent(){
                 <Link href= 'https://www.linkedin.com/in/nick-truong' target="_blank" className="flex gap-3 items-center hover:scale-110 hover:transition hover:duration-300 active:duration-0 active:text-darktext dark:active:text-lighttext">
                     <Image
                         src = "/_art/linkedin.png"
-                        alt = "Linkedin"
+                        alt = "LinkedIn"
                         width = {40}
                         height = {40}
                         />

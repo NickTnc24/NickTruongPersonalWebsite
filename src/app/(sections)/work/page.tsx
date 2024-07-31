@@ -16,7 +16,7 @@ function projectLinks(title: string,urlName: string, imgPath: string, descriptio
                     alt = "project"
                     width = {300}
                     height = {200}
-                    className="rounded-md"
+                    className="rounded-md dark:bg-white"
                 />
             </Link>
             <div className="flex flex-col justify-around gap-y-2 items-center">
@@ -44,6 +44,7 @@ export default function Projects(){
             <div>{projectLinks("Personal Website", "https://github.com/NickTnc24/NickTnc24.github.io", "/_art/website.png", "I made a personal website that you can find all about me!", ["Next.js", "Tailwind", "Vercel"])}</div>
             <div>{projectLinks("Wordle", "https://github.com/NickTnc24/Wordle", "/_art/wordle.png", "I coded Wordle that has a special twist to it! Once you submit a guess, the letters that are not a part of the secret word are disabled to use.", ["JavaFX"])}</div>
             <div>{projectLinks("Python-Monsters", "https://github.com/NickTnc24/Python-Monsters", "/_art/pokemon.png", "I followed a tutorial to build a pokemon like pixel game to learn more about game design and programming. I learned concepts like collisions, priority, and animations. Was very fun and also frustrating to learn!", ["PyGame", "Tiled"])}</div>
+            <div>{projectLinks("Youtube Video Downloader", "https://github.com/NickTnc24/DownloadYoutubeVidScripts", "/_art/youtube.png", "Developed a script to download Youtube videos in the highest quality so you can watch anywhere without ads.", ["Pytube"])}</div>
           </div>
           <div className="text-header-size self-center">Experience</div>
           {/* <div className="before:content-[''] before:absolute before:h-96 before:w-1 before:bg-red-800">asdfadsf</div> */}

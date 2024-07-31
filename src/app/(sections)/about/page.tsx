@@ -7,7 +7,7 @@ export const metadata = {
 
 function aboutMe(title: string, imgUrl: string, description: string){
   return(
-    <div className="flex flex-row max-sm:flex-col gap-y-5 justify-evenly items-center">
+    <div className="flex flex-row max-md:flex-col gap-y-5 justify-evenly items-center">
       <Image
           src = {imgUrl}
           alt = {title}
@@ -15,7 +15,7 @@ function aboutMe(title: string, imgUrl: string, description: string){
           height = {600}
           className="about-picture-cards max-sm:w-auto max-sm:h-[400px] mx-10"
       />
-      <div className="sm:w-1/3 mx-10 max-sm:w-10/12 about-picture-description">
+      <div className="md:w-1/3 mx-10 max-md:w-10/12 about-picture-description">
         &emsp;&emsp;{description}
       </div>
     </div>
@@ -32,7 +32,7 @@ function aboutMeReverse(title: string, imgUrl: string, description: string){
               height = {600}
               className="about-picture-cards max-sm:w-auto max-sm:h-[400px] mx-10"
           />
-      <div className="sm:w-1/3 mx-10 max-sm:w-10/12 about-picture-description ">
+      <div className="md:w-1/3 mx-10 max-md:w-10/12 about-picture-description ">
         &emsp;&emsp;{description}
       </div>
     </div>

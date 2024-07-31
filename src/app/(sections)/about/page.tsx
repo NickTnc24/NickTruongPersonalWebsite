@@ -11,11 +11,11 @@ function aboutMe(title: string, imgUrl: string, description: string){
       <Image
           src = {imgUrl}
           alt = {title}
-          width = {450}
-          height = {400}
-          className="about-picture-cards"
+          width = {600}
+          height = {600}
+          className="about-picture-cards max-sm:w-auto max-sm:h-[400px] mx-10"
       />
-      <div className="sm:w-1/3 max-sm:w-10/12 about-picture-description">
+      <div className="sm:w-1/3 mx-10 max-sm:w-10/12 about-picture-description">
         &emsp;&emsp;{description}
       </div>
     </div>
@@ -28,11 +28,11 @@ function aboutMeReverse(title: string, imgUrl: string, description: string){
       <Image
               src = {imgUrl}
               alt = {title}
-              width = {450}
-              height = {400}
-              className="about-picture-cards"
+              width = {600}
+              height = {600}
+              className="about-picture-cards max-sm:w-auto max-sm:h-[400px] mx-10"
           />
-      <div className="sm:w-1/3 max-sm:w-10/12 about-picture-description">
+      <div className="sm:w-1/3 mx-10 max-sm:w-10/12 about-picture-description ">
         &emsp;&emsp;{description}
       </div>
     </div>
@@ -41,7 +41,7 @@ function aboutMeReverse(title: string, imgUrl: string, description: string){
 
 export default function About(){
     return (
-        <div className="min-h-screen flex flex-col gap-10">
+        <div className="min-h-screen flex flex-col gap-20">
           <div className="flex flex-col text-header-size items-center">
             <div>Yo I&apos;m Nick and this is: </div>
             <div>Stuff I like to do</div>

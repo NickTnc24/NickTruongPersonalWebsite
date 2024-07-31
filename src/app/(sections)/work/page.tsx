@@ -46,7 +46,7 @@ export default function Projects(){
             <div>{projectLinks("Python-Monsters", "https://github.com/NickTnc24/Python-Monsters", "/_art/pokemon.png", "I followed a tutorial to build a pokemon like pixel game to learn more about game design and programming. I learned concepts like collisions, priority, and animations. Was very fun and also frustrating to learn!", ["PyGame", "Tiled"])}</div>
           </div>
           <div className="text-header-size self-center">Experience</div>
-          <div className="before:content-[''] before:absolute before:h-96 before:w-1 before:bg-red-800">asdfadsf</div>
+          {/* <div className="before:content-[''] before:absolute before:h-96 before:w-1 before:bg-red-800">asdfadsf</div> */}
         </div>
       );
 }

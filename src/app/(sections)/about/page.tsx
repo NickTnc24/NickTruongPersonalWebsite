@@ -24,7 +24,7 @@ function aboutMe(title: string, imgUrl: string, description: string){
 
 function aboutMeReverse(title: string, imgUrl: string, description: string){
   return(
-    <div className="flex flex-row-reverse max-sm:flex-col gap-y-5 justify-evenly items-center">
+    <div className="flex flex-row-reverse max-md:flex-col gap-y-5 justify-evenly items-center">
       <Image
               src = {imgUrl}
               alt = {title}

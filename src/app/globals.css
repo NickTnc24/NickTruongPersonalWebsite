@@ -35,7 +35,7 @@
 @layer utilities {
 
   .addPing{
-    @apply after:absolute after:content-['']  after:h-2 after:w-2 after:bg-red-700 after:dark:bg-darksecondary after:animate-ping-notification after:rounded-full;
+    @apply after:absolute after:content-['']  after:h-2 after:w-2 after:bg-darksecondary after:animate-ping-notification after:rounded-full;
   }
 
   .bg-dynamic{
@@ -64,6 +64,10 @@
 
   .text-header-size{
     @apply text-3xl max-sm:text-xl;
+  }
+
+  .addUnderline{
+    @apply h-0.5 w-7/12 mt-5 mb-5 bg-white rounded-lg opacity-50;
   }
 
   /* .fadeInRight{

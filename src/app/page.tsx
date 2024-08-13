@@ -2,27 +2,77 @@
 import Image from "next/image";
 import React, {useState, useEffect} from 'react';
 import Link from "next/link";
+import HeaderComponent from "./_components/headerComponent";
 
 
 export default function Home() {
 
   return (
-    <div className="min-h-screen flex flex-col items-center gap-10">
-      <Link href = "/" className="text-7xl py-5 justify-center">
-          Nick Truong
-      </Link>
-      <div className="flex flex-wrap lg:flex-nowrap flex-row justify-center md:justify-around items-center gap-y-10 gap-10 mx-10">
+    <div className="relative min-h-screen overflow-hidden text-lightprimary">
+      <Image 
+        src = "/_art/bg.JPG"
+        alt = "Background"
+        fill = {true}
+        className="absolute brightness-50 min-w-fit -translate-x-64"
+      />
+      <div className="flex flex-col items-center justify-start">
+        <HeaderComponent />
         <Image 
           src = "/_art/headshot.jpg"
           alt = "Logo"
-          width = {500}
+          width = {250}
           height = {1}
-          className="rounded-full animate-fadeInRight"
+          className="relative rounded-full animate-fadeInRight"
         />
-        <div className="about-picture-description lg:max-w-[50%]">
-          &emsp;&emsp;Welcome to my website! I&apos;m Nick Truong and I am majoring in Computer Science with a minor of Game Design and Cybersecurity at Texas A&M University. I work as a SOC Analyst for Texas A&M University as well as a Recreational Activities Director for SASE.
+        {/* In the box */}
+        <div className="addUnderline animate-fadeInRight"></div>
+        <div className="relative text-7xl mb-5">
+          Nick Truong
         </div>
+        <div className="text-center relative">
+          Software Engineer, Marathon Runner, Security Analyst, Pianist, Sports Coordinator
+        </div>
+        <div className="addUnderline animate-fadeInLeft"></div>
+        {/* In the box */}
       </div>
+      {/* contact links */}
+      <div className="flex flex-row justify-center gap-x-10 z-10 animate-fadeInLeft">
+        <Link href= 'https://github.com/nicktnc24' target="_blank" className="hover:scale-110 hover:transition hover:duration-300 active:duration-0">
+          <Image
+            src = "/_art/github.jpg"
+            alt = "Github"
+            width = {40}
+            height = {40}
+            className="rounded-full relative"
+          />
+        </Link>
+        <Link href= 'https://www.linkedin.com/in/nick-truong' target="_blank" className="hover:scale-110 hover:transition hover:duration-300 active:duration-0">
+          <Image
+            src = "/_art/linkedin.png"
+            alt = "LinkedIn"
+            width = {40}
+            height = {40}
+            className="relative"
+          />
+        </Link>
+        <Image
+          src = "/_art/number.png"
+          alt = "Number"
+          width = {40}
+          height = {40}
+          title="281-919-4995"
+          className="relative"
+        />
+        <Image
+          src = "/_art/mail.png"
+          alt = "Email"
+          width = {40}
+          height = {40}
+          title="nicktnc24@gmail.com"
+          className="relative"
+        />
+      </div>
+      {/* contact links */}
     </div>
   );
 }

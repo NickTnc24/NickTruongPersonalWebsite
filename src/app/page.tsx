@@ -16,7 +16,7 @@ export default function Home() {
         className="absolute brightness-50 min-w-fit -translate-x-64"
       />
       <div className="flex flex-col items-center justify-start">
-        <HeaderComponent />
+        <HeaderComponent></HeaderComponent>
         <Image 
           src = "/_art/headshot.jpg"
           alt = "Logo"

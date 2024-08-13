@@ -8,12 +8,14 @@ import HeaderComponent from "./_components/headerComponent";
 export default function Home() {
 
   return (
-    <div className="relative min-h-screen overflow-hidden text-lightprimary">
+    <div className="relative min-h-screen text-lightprimary">
       <Image 
         src = "/_art/bg.JPG"
         alt = "Background"
-        fill = {true}
-        className="absolute brightness-50 min-w-fit -translate-x-64"
+        fill
+        layout="fill"
+        objectFit="cover"
+        className="absolute brightness-50"
       />
       <div className="flex flex-col items-center justify-start">
         <HeaderComponent></HeaderComponent>

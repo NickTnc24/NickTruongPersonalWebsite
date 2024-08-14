@@ -22,7 +22,7 @@ function removePing(pingName: string){
 export default function HeaderComponent(){
     return(
         <>
-            <div className="relative flex flex-row items-center justify-between top-0 z-10 w-full rounded-md sm:duration-300 ">
+            <div className="absolute flex flex-row items-center justify-between top-0 z-10 w-full rounded-md sm:duration-300 ">
                 <div className="pl-7 pt-2 w-[60px] h-[60px]">
                     <DarkModeComponent/>
                 </div>

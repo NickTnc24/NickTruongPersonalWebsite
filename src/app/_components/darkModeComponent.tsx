@@ -33,7 +33,6 @@ export default function DarkModeComponent(){
 
     return(
         <>  
-            {/* {themeCheck()} */}
             <button onClick={() => setDarkMode((darkMode) =>
                 darkMode? false : true
             )} className="absolute top-3 left-3 z-30">
@@ -42,10 +41,9 @@ export default function DarkModeComponent(){
                     alt = 'dark mode toggle'
                     width = {40}
                     height = {40}
-                    className = "hover:scale-110 hover:transition hover:duration-300 "
+                    className = "relative hover:scale-110 hover:transition hover:duration-300 "
                 />
             </button>
-            
         </>
     );
 }

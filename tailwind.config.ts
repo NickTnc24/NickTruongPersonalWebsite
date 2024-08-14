@@ -12,17 +12,17 @@ const config: Config = {
     extend: {
       keyframes:{
         fadeInRight: {
-          '0%': {opacity: '0', transform: 'translateX(-40%)'},
+          '0%': {opacity: '0', transform: 'translateX(-100px)'},
           '100%': {opacity: '1', transform: 'translateX(0%)'}
         },
         fadeInLeft: {
-          '0%': {opacity: '0', transform: 'translateX(40%)'},
+          '0%': {opacity: '0', transform: 'translateX(100px)'},
           '100%': {opacity: '1', transform: 'translateX(0%)'}
         }
       },
       animation: {
         'ping-notification': 'ping 2s cubic-bezier(0, .1, 1, 1) infinite',
-        'fadeInRight': 'fadeInRight 1s',
+        'fadeInRight': 'fadeInRight 1s ',
         'fadeInLeft': 'fadeInLeft 1s',
 
       },

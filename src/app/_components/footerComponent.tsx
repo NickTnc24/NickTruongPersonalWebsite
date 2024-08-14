@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode } from "react";
 import { UrlObject } from "url";
-
+//not being used
 export default function FooterComponent(){
     return(
         <>

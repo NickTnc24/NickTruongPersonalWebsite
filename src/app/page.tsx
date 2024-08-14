@@ -6,9 +6,8 @@ import HeaderComponent from "./_components/headerComponent";
 
 
 export default function Home() {
-
   return (
-    <div className="relative min-h-screen text-lightprimary">
+    <div className="relative min-h-screen overflow-hidden text-lightprimary">
       <Image 
         src = "/_art/bg.JPG"
         alt = "Background"
@@ -17,8 +16,7 @@ export default function Home() {
         objectFit="cover"
         className="absolute brightness-50"
       />
-      <div className="flex flex-col items-center justify-start">
-        <HeaderComponent></HeaderComponent>
+      <div className="flex flex-col items-center justify-start mt-20">
         <Image 
           src = "/_art/headshot.jpg"
           alt = "Logo"
@@ -75,6 +73,7 @@ export default function Home() {
         />
       </div>
       {/* contact links */}
+      <div className="absolute bottom-0 right-0">Built via Next.js and Tailwind</div>
     </div>
   );
 }

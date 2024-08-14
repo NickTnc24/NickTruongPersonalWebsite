@@ -43,8 +43,7 @@ function aboutMeReverse(title: string, imgUrl: string, description: string){
 export default function About(){
   return (
     <>
-      <HeaderComponent></HeaderComponent>
-      <div className="min-h-screen flex flex-col gap-20">
+      <div className="min-h-screen flex flex-col gap-20 pt-20">
         <div className="flex flex-col text-header-size items-center">
           <div>Yo I&apos;m Nick and this is: </div>
           <div>Stuff I like to do</div>

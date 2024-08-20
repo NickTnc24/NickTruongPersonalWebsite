@@ -19,15 +19,13 @@ function headerLinks(urlName: string, name: string){
 function removePing(pingName: string){
     document.getElementById(pingName)?.classList.add("after:content-none");
 }
-function isOnHomePage(){
-    return usePathname() === "/";
-}
-//new headercomponent
+
 export default function HeaderComponent(){
-    console.log(usePathname())
+    const pathname = usePathname();
+    console.log(pathname);
     return(
         <>
-            <div className={`absolute flex flex-row items-center justify-between top-0 z-10 w-full rounded-md sm:duration-300 ${isOnHomePage() ? 'text-darktext' : 'text-dynamic'}`}>
+            <div className={`absolute flex flex-row items-center justify-between top-0 z-10 w-full rounded-md sm:duration-300 ${(pathname === '/') ? 'text-darktext' : 'text-dynamic'}`}>
                 <div className="pl-7 pt-2 w-[60px] h-[60px]">
                     <DarkModeComponent/>
                 </div>

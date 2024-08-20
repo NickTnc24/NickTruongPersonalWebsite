@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React, {useState, useEffect} from 'react';
 import Link from "next/link";
-import HeaderComponent from "./_components/headerComponent";
 
 export default function Home() {
 

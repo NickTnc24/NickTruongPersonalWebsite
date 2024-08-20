@@ -1,23 +1,26 @@
-'use client';
 import Image from "next/image";
 import Link from "next/link";
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, AwaitedReactNode } from "react";
 import { UrlObject } from "url";
 import React, { useState, useEffect } from 'react';
+import { usePathname } from "next/navigation";
+
 
 export default function DarkModeComponent(){
     const [darkMode, setDarkMode] = useState(false);
 
-    // const userTheme = typeof window !== 'undefined' && localStorage.getItem("Theme");
+    const pathname = usePathname();
 
-    // const themeCheck = () => {
-    //     if (userTheme === "dark") {
-    //         document.documentElement.classList.add("dark");
-    //     }
-    // }
+    const isOnHomePage = () => {
+        return pathname === "/";
+    }
 
     const changeTheme = () => {
-        if (!darkMode){
+        if(isOnHomePage()){
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("Theme", "light");
+        }
+        else if (!darkMode){
             document.documentElement.classList.remove("dark");
             localStorage.setItem("Theme", "light");
         }
@@ -26,6 +29,7 @@ export default function DarkModeComponent(){
             localStorage.setItem("Theme", "dark");
         }
     }
+
     
     useEffect(() => {
         changeTheme();
@@ -35,7 +39,9 @@ export default function DarkModeComponent(){
         <>  
             <button onClick={() => setDarkMode((darkMode) =>
                 darkMode? false : true
-            )} className="absolute top-3 left-3 z-30">
+            )}
+            hidden = {isOnHomePage()}
+            className="absolute top-3 left-3 z-30">
                 <Image
                     src = {darkMode? '/_art/dark.svg' : '/_art/light.svg'}
                     alt = 'dark mode toggle'

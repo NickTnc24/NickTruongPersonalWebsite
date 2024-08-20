@@ -10,14 +10,14 @@ export const metadata = {
 
 function projectLinks(title: string,urlName: string, imgPath: string, description: string, techUsed: Array<String>){
     return(
-        <div className="flex rounded-md dark:bg-darkbackgroundshade bg-lightbackgroundshade justify-center flex-wrap lg:flex-nowrap gap-2 min-w-[300px] max-w-[720px]">
+        <div className="flex rounded-md bg-darkbackgroundshade dark:bg-lightbackgroundshade justify-center flex-wrap lg:flex-nowrap gap-2 min-w-[300px] max-w-[720px]">
             <Link href={urlName} target="_blank" className="shrink-0">
                 <Image
                     src = {imgPath}
                     alt = "project"
                     width = {300}
                     height = {200}
-                    className="rounded-md dark:bg-white"
+                    className="rounded-md bg-white dark:bg-transparent"
                 />
             </Link>
             <div className="flex flex-col justify-around gap-y-2 items-center">
@@ -38,7 +38,7 @@ function projectLinks(title: string,urlName: string, imgPath: string, descriptio
 export default function Projects(){
     return (
         <>
-            <div className="min-h-screen flex flex-col items-center gap-10 relative pt-20">
+            <div className="min-h-screen flex flex-col items-center gap-10 relative pt-20 bg-dynamic text-dynamic">
                 <div className="text-header-size self-center">Projects</div>
                 <div className="self-center opacity-60 mx-10">Click on an project to learn more about it</div>
                 <div className="flex flex-row gap-y-10 mx-10 justify-center gap-x-10 flex-wrap pb-10">

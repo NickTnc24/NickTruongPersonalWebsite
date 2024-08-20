@@ -26,12 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className= {SourceCodePro.className}>
-        <div className="text-lightprimary bg-dynamic text-dynamic">
-          {/* <DarkModeComponent></DarkModeComponent> */}
-        {/* <div className="bg-dynamic text-dynamic scroll-smooth transition-colors duration-300"> */}
+        <div className="">
           <HeaderComponent></HeaderComponent>
           {children}
-          {/* <FooterComponent></FooterComponent> */}
         </div>
       </body>
     </html>

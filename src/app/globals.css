@@ -9,15 +9,16 @@
   }
 
   .bg-dynamic{
-    @apply bg-lightbackground dark:bg-darkbackground;
+    @apply dark:bg-lightbackground bg-darkbackground;
   }
 
+  /* lightmode is dark */
   .text-dynamic{
-    @apply text-lighttext  dark:text-darktext;
+    @apply dark:text-lighttext  text-darktext;
   }
 
   .primary-dynamic{
-    @apply bg-lightprimary dark:bg-darkprimary;
+    @apply dark:bg-lightprimary bg-darkprimary;
   }
 
   .about-picture-cards{
@@ -25,7 +26,7 @@
   }
 
   .about-picture-description{
-    @apply text-left rounded-xl dark:bg-darkbackgroundshade bg-lightbackgroundshade px-10 py-5 ;
+    @apply text-left rounded-xl bg-darkbackgroundshade dark:bg-lightbackgroundshade px-10 py-5 ;
   }
 
   /* .secondary-dynamic{

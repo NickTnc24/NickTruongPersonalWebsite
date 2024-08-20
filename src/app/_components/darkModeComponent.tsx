@@ -16,11 +16,7 @@ export default function DarkModeComponent(){
     }
 
     const changeTheme = () => {
-        if(isOnHomePage()){
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("Theme", "light");
-        }
-        else if (!darkMode){
+        if (!darkMode){
             document.documentElement.classList.remove("dark");
             localStorage.setItem("Theme", "light");
         }
@@ -32,6 +28,7 @@ export default function DarkModeComponent(){
 
     
     useEffect(() => {
+        
         changeTheme();
     }, [darkMode]);
 

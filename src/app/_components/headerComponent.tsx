@@ -22,7 +22,6 @@ function removePing(pingName: string){
 
 export default function HeaderComponent(){
     const pathname = usePathname();
-    console.log(pathname);
     return(
         <>
             <div className={`absolute flex flex-row items-center justify-between top-0 z-10 w-full rounded-md sm:duration-300 ${(pathname === '/') ? 'text-darktext' : 'text-dynamic'}`}>

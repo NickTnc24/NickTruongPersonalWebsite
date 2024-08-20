@@ -36,7 +36,7 @@ export default function Home() {
         {/* In the box */}
       </div>
       {/* contact links */}
-      <div className="relative flex flex-row justify-center gap-x-10 z-10 animate-fadeInLeft">
+      <div className="relative flex flex-row justify-center gap-x-10 z-10 mb-10 animate-fadeInLeft">
         <Link href= 'https://github.com/nicktnc24' target="_blank" className="hover:scale-110 hover:transition hover:duration-300 active:duration-0">
           <Image
             src = "/_art/github.jpg"

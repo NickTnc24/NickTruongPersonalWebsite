@@ -24,6 +24,7 @@ function isOnHomePage(){
 }
 //new headercomponent
 export default function HeaderComponent(){
+    console.log(usePathname())
     return(
         <>
             <div className={`absolute flex flex-row items-center justify-between top-0 z-10 w-full rounded-md sm:duration-300 ${isOnHomePage() ? 'text-darktext' : 'text-dynamic'}`}>

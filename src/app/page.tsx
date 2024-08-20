@@ -3,10 +3,8 @@ import Image from "next/image";
 import React, {useState, useEffect} from 'react';
 import Link from "next/link";
 import HeaderComponent from "./_components/headerComponent";
-import { usePathname } from "next/navigation";
 
 export default function Home() {
-  const pathname = usePathname();
 
   return (
     <div className="relative min-h-screen overflow-hidden text-lightprimary">

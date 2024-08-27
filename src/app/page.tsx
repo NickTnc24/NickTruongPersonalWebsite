@@ -4,9 +4,8 @@ import React, {useState, useEffect} from 'react';
 import Link from "next/link";
 
 export default function Home() {
-
   return (
-    <div className="relative min-h-screen overflow-hidden text-lightprimary">
+    <div className="relative min-h-screen overflow-hidden ">
       <Image 
         src = "/_art/bg.JPG"
         alt = "Background"
@@ -15,7 +14,7 @@ export default function Home() {
         objectFit="cover"
         className="absolute brightness-50"
       />
-      <div className="flex flex-col items-center justify-start mt-20">
+      <div className="flex flex-col items-center justify-start mt-40">
         <Image 
           src = "/_art/headshot.jpg"
           alt = "Logo"
@@ -25,10 +24,10 @@ export default function Home() {
         />
         {/* In the box */}
         <div className="addUnderline animate-fadeInRight"></div>
-        <div className="relative text-7xl mb-5">
+        <div className="relative text-7xl mb-5 text-darktext">
           Nick Truong
         </div>
-        <div className="text-center relative">
+        <div className="text-center relative text-lightprimary">
           Software Engineer, Marathon Runner, Security Analyst, Pianist, Sports Coordinator
         </div>
         <div className="addUnderline animate-fadeInLeft"></div>

@@ -40,7 +40,7 @@ export default function DarkModeComponent(){
             hidden = {isOnHomePage()}
             className="absolute top-3 left-3 z-30">
                 <Image
-                    src = {darkMode? '/_art/dark.svg' : '/_art/light.svg'}
+                    src = {darkMode? '/_art/light.png' : '/_art/dark.svg'}
                     alt = 'dark mode toggle'
                     width = {40}
                     height = {40}

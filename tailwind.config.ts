@@ -18,13 +18,17 @@ const config: Config = {
         fadeInLeft: {
           '0%': {opacity: '0', transform: 'translateX(100px)'},
           '100%': {opacity: '1', transform: 'translateX(0%)'}
+        },
+        aboutFadeUp: {
+          '0%': {transform: 'translateY(200px)'},
+          '100%': {transform: 'translateY(0%)'}
         }
       },
       animation: {
         'ping-notification': 'ping 2s cubic-bezier(0, .1, 1, 1) infinite',
         'fadeInRight': 'fadeInRight 1s ',
         'fadeInLeft': 'fadeInLeft 1s',
-
+        'aboutFadeUp': 'aboutFadeUp 1s',
       },
       colors: {
         'darktext': 'rgb(237, 241, 243)',

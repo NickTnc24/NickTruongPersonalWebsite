@@ -46,9 +46,9 @@ export default function Projects(){
                     <div>{projectLinks("Personal Website", "https://github.com/NickTnc24/NickTnc24.github.io", "/_art/website.png", "I made a personal website that you can find all about me!", ["React Native", "Next.js", "Tailwind", "Vercel", "HTML", "CSS", "Typescript"])}</div>
                     <div>{projectLinks("Wordle", "https://github.com/NickTnc24/Wordle", "/_art/wordle.png", "I coded Wordle that has a special twist to it! Once you submit a guess, the letters that are not a part of the secret word are disabled to use.", ["JavaFX"])}</div>
                     <div>{projectLinks("Python-Monsters", "https://github.com/NickTnc24/Python-Monsters", "/_art/pokemon.png", "I followed a tutorial to build a pokemon like pixel game to learn more about game design and programming. I learned concepts like collisions, priority, and animations. Was very fun and also frustrating to learn!", ["PyGame", "Tiled"])}</div>
-                    <div>{projectLinks("Youtube Video Downloader", "https://github.com/NickTnc24/DownloadYoutubeVidScripts", "/_art/youtube.png", "Developed a script to download Youtube videos in the highest quality so you can watch anywhere without ads.", ["Pytube"])}</div>
+                    <div>{projectLinks("64-Bit CPU", "https://github.com/NickTnc24/Y86CPU", "/_art/cpu.jpeg", "Designed a 64-bit CPU using Y86 Assembly Code that performs basic arithmetic and Y86 commands.", ["Logisim"])}</div>
                 </div>
-                <div className="text-header-size self-center">Experience</div>
+                {/* <div className="text-header-size self-center">Experience</div> */}
                 {/* <div className="before:content-[''] before:absolute before:h-96 before:w-1 before:bg-red-800">asdfadsf</div> */}
             </div>
         </>

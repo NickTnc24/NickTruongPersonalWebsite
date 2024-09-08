@@ -39,14 +39,43 @@ function aboutMeReverse(title: string, imgUrl: string, description: string){
     </div>
   )
 }
+
+const stats = (name: string, answer: string) => {
+  return (
+    <div className="flex flex-row justify-between">
+      <div className="">+ {name}</div>
+      <div className="italic">{answer}</div>
+    </div>
+  )
+}
+
 //new About
 export default function About(){
   return (
     <>
       <div className="relative min-h-screen max-h-screen overflow-hidden bg-dynamic text-dynamic justify-start flex flex-col items-center pt-20">
         <div className="text-header-size animate-aboutFadeUp">About Me</div>
-        <div className=""></div>
-        {/* <div className="">Yo! I'm Nick Truong and I'm a computer science major at Texas A&M University class of 2026.</div> */}
+        <div className="mt-10 md:w-3/5">&emsp;&emsp;Yo! I'm Nick Truong and I'm a computer science major at Texas A&M University class of 2026. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, adipisci. Porro, sequi delectus quidem dolor culpa labore rerum maiores suscipit natus omnis fugit architecto eligendi sed obcaecati reprehenderit dicta laborum!</div>
+        <div className="addUnderline"></div>
+        <div className="profile-box">
+          <Image
+            src = "/_art/marathon.jpg"
+            alt = "Profile"
+            width = {300}
+            height = {300}>
+          </Image>
+          <div className="flex flex-col w-full px-10 py-5 gap-y-2">
+            <div className="text-2xl self-center">Stats</div>
+              {stats("Name", "Nick Truong")}
+              {stats("School", "Texas A&M University")}
+              {stats("Major", "Computer Science")}
+              {stats("Classification", "Junior")}
+              {/* {stats("Birthday", "05/19/2004")}
+              {stats("Height", "5'9")}
+              {stats("Weight", "155lbs")} */}
+          </div>
+        </div>
+        <div className="addUnderline"></div>
       </div>
     </>
   );
